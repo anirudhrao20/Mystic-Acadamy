@@ -10,7 +10,8 @@ import SwiftUI
 struct HomeView: View {
     
     @State var hasNotification = false
-    var selectedlearningTrack = ""
+    @State var selectedlearningTrack = ""
+    @State var showTrackSelectionSheet = false
     
     var body: some View {
         ZStack {
@@ -41,6 +42,10 @@ struct HomeView: View {
                 }
                 .padding(.horizontal, 24.0)
             }
+        }
+        .sheet(isPresented: $showTrackSelectionSheet) {
+            TrackSelectionSheet(selectedlearningTrack: $selectedlearningTrack)
+                .presentationDetents([.medium, .large])
         }
     }
     
@@ -80,18 +85,15 @@ struct HomeView: View {
             Image("Banner")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-            HStack {
-                Text(selectedlearningTrack.isEmpty ? "Choose a Learning Track" : selectedlearningTrack)
-                Spacer()
-                Image(systemName: "chevron.down")
+            Button {
+                showTrackSelectionSheet.toggle()
+            } label: {
+                HStack {
+                    Text(selectedlearningTrack.isEmpty ? "Choose a Learning Track" : selectedlearningTrack)
+                    Spacer()
+                    Image(systemName: "chevron.down")
+                }
             }
-            
-            //        Picker(selection: .constant(1)) {
-            //            Text("Choose a Learning Track")
-            //        } label: {
-            //            Text("Track")
-            //        }
-            //        .frame(maxWidth: .infinity)
             .fontWeight(.semibold)
             .foregroundColor(Color("Neutral-3"))
             .padding(.vertical, 12)

@@ -12,6 +12,8 @@
 		8F9E10BD29BF950A004237B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10BC29BF950A004237B9 /* Category.swift */; };
 		8F9E10BF29BF9811004237B9 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10BE29BF9811004237B9 /* CourseItem.swift */; };
 		8F9E10C129BF9B89004237B9 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C029BF9B89004237B9 /* Course.swift */; };
+		8F9E10C329BFC5D1004237B9 /* TrackSelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */; };
+		8F9E10C529BFC6FB004237B9 /* LearningTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */; };
 		8FC5EC2029B5083A002A5C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5EC1F29B5083A002A5C75 /* HomeView.swift */; };
 		8FD3602429B26B96008E4C1C /* Mystic_AcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3602329B26B96008E4C1C /* Mystic_AcademyApp.swift */; };
 		8FD3602629B26B96008E4C1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3602529B26B96008E4C1C /* ContentView.swift */; };
@@ -28,6 +30,8 @@
 		8F9E10BC29BF950A004237B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		8F9E10BE29BF9811004237B9 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		8F9E10C029BF9B89004237B9 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSelectionSheet.swift; sourceTree = "<group>"; };
+		8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTrack.swift; sourceTree = "<group>"; };
 		8FC5EC1F29B5083A002A5C75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8FD3602029B26B96008E4C1C /* Mystic Academy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mystic Academy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD3602329B26B96008E4C1C /* Mystic_AcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mystic_AcademyApp.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			children = (
 				8F9E10BC29BF950A004237B9 /* Category.swift */,
 				8F9E10C029BF9B89004237B9 /* Course.swift */,
+				8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -81,6 +86,7 @@
 				8F9E10BB29BF94F9004237B9 /* Models */,
 				8F9E10B629BDFDE4004237B9 /* Items */,
 				8FC5EC1F29B5083A002A5C75 /* HomeView.swift */,
+				8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 				8F9E10C129BF9B89004237B9 /* Course.swift in Sources */,
 				8F9E10BF29BF9811004237B9 /* CourseItem.swift in Sources */,
 				8FD3603B29B27627008E4C1C /* LargeButton.swift in Sources */,
+				8F9E10C329BFC5D1004237B9 /* TrackSelectionSheet.swift in Sources */,
 				8F9E10BA29BE01BF004237B9 /* TabBarView.swift in Sources */,
 				8FD3603229B272C6008E4C1C /* OnboardingView.swift in Sources */,
 				8F9E10B829BDFDFA004237B9 /* CategoryItem.swift in Sources */,
@@ -247,6 +254,7 @@
 				8FC5EC2029B5083A002A5C75 /* HomeView.swift in Sources */,
 				8FD3602629B26B96008E4C1C /* ContentView.swift in Sources */,
 				8FD3602429B26B96008E4C1C /* Mystic_AcademyApp.swift in Sources */,
+				8F9E10C529BFC6FB004237B9 /* LearningTrack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
