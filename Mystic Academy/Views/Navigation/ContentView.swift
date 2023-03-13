@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isFirstTime") var isFirstTime: Bool = false
+    
     var body: some View {
-        OnboardingView()
+        if isFirstTime {
+            OnboardingView()
+        } else {
+            TabBarView()
+        }
     }
 }
 
