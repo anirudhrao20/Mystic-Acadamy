@@ -14,38 +14,43 @@ struct TrackSelectionSheet: View {
     
     var body: some View {
         NavigationView {
-            List(testTracks) { learningTrack in
-                Button {
-                    selectedlearningTrack = learningTrack.trackName
-                } label: {
-                    HStack {
-                        Text(learningTrack.trackName)
-                        Spacer()
-                        if selectedlearningTrack == learningTrack.trackName {
-                            Image(systemName: "checkmark")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundColor(.white)
-                                .padding(5)
-                                .frame(width: 20.0, height: 20.0)
-                                .background(Color.accentColor)
-                                .clipShape(Circle())
+            ZStack {
+                Color("Background")
+                    .ignoresSafeArea()
+                VStack {
+                    List(testTracks) { learningTrack in
+                        Button {
+                            selectedlearningTrack = learningTrack.trackName
+                        } label: {
+                            HStack {
+                                Text(learningTrack.trackName)
+                                Spacer()
+                                if selectedlearningTrack == learningTrack.trackName {
+                                    Image(systemName: "checkmark")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .foregroundColor(.white)
+                                        .padding(5)
+                                        .frame(width: 20.0, height: 20.0)
+                                        .background(Color.accentColor)
+                                        .clipShape(Circle())
+                                }
+                            }
                         }
+                        .listRowBackground(Color("Background"))
                     }
-                }
-                .listRowBackground(Color("Background"))
-            }
-            .listStyle(.plain)
-            .background(Color("Background"))
-            .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
+                    .listStyle(.plain)
+                    .background(Color("Background"))
                     Button {
                         selectedlearningTrack = ""
                     } label: {
                         Text("Clear Selection")
-                            .foregroundColor(.primary)
                     }
                 }
+            }
+            .navigationTitle("Learning Track")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         dismiss()
