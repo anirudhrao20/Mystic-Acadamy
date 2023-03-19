@@ -19,7 +19,7 @@ struct Course: Identifiable, Codable {
 }
 
 var testCourses = [
-    Course(image: "CourseImage", title: "Sketching: Transform your doodles into art", instructor: "Anirudh Rao", category: "Test", rating: 5.0, numberOfStudents: 14000, price: 3.0),
-    Course(image: "CourseImage", title: "Illustration Techniques to Unlock your Creativity", instructor: "Manas Karingal", category: "Test", rating: 4.9, numberOfStudents: 1275034, price: 5),
-    Course(image: "CourseImage", title: "Fill Your Illustrations with Life and Detail", instructor: "Aashish Kapoor", category: "Test", rating: 4.9, numberOfStudents: 198263, price: 99)
+    Course(image: "CourseImage", title: "Sketching: Transform your doodles into art", instructor: "Anirudh Rao", category: "Computing", rating: 5.0, numberOfStudents: 14000, price: 3.0),
+    Course(image: "CourseImage", title: "Illustration Techniques to Unlock your Creativity", instructor: "Manas Karingal", category: "Computing", rating: 4.9, numberOfStudents: 1275034, price: 5),
+    Course(image: "CourseImage", title: "Fill Your Illustrations with Life and Detail", instructor: "Aashish Kapoor", category: "House Building", rating: 4.9, numberOfStudents: 198263, price: 99)
 ]

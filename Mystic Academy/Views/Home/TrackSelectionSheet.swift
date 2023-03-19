@@ -43,6 +43,7 @@ struct TrackSelectionSheet: View {
                     .background(Color("Background"))
                     Button {
                         selectedlearningTrack = ""
+                        dismiss()
                     } label: {
                         Text("Clear Selection")
                     }

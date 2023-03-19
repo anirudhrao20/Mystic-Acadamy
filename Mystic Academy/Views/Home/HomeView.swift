@@ -111,13 +111,10 @@ struct HomeView: View {
                 Text("Categories")
                     .fontWeight(.bold)
                 Spacer()
-                Button {
-                    
-                } label: {
+                NavigationLink(destination: CategoriesView()) {
                     Text("See all")
                         .fontWeight(.bold)
                 }
-                
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12.0) {
