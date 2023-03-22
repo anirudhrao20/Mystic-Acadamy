@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    @EnvironmentObject var loginManager: SessionStore
+    
     var body: some View {
         ZStack {
             Color("Background")
@@ -47,5 +50,6 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
+            .environmentObject(SessionStore())
     }
 }

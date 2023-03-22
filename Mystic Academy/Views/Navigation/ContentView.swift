@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var loginManager = SessionStore()
     @AppStorage("isFirstTime") var isFirstTime: Bool = false
     
     var body: some View {
         if isFirstTime {
             OnboardingView()
+                .environmentObject(loginManager)
         } else {
             TabBarView()
+                .environmentObject(loginManager)
         }
     }
 }

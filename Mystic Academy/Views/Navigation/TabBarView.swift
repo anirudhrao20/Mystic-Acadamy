@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
+    @EnvironmentObject var loginManager: SessionStore
+    
     var body: some View {
         TabView {
             NavigationView {
                 HomeView()
+                    .environmentObject(loginManager)
             }
             .tabItem {
                 Image(systemName: "square.grid.2x2")
@@ -24,5 +28,6 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
+            .environmentObject(SessionStore())
     }
 }

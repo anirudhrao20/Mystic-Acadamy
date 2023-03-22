@@ -20,7 +20,10 @@ struct CourseCategoryView: View {
             ScrollView {
                 VStack(spacing: 24.0) {
                     ForEach(searchResults) { course in
-                        CourseRow(course: course)
+                        NavigationLink(destination: CourseView(course: course)) {
+                            CourseRow(course: course)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }

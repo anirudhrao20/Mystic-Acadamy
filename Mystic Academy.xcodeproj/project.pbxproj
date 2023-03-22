@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0B327729C8F3E0001F5C7C /* LessonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B327629C8F3E0001F5C7C /* LessonRow.swift */; };
+		8F0B327929C8FCA5001F5C7C /* CourseUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B327829C8FCA5001F5C7C /* CourseUnit.swift */; };
+		8F0B327B29C90451001F5C7C /* ReviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B327A29C90451001F5C7C /* ReviewItem.swift */; };
+		8F0B327D29C90E1A001F5C7C /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B327C29C90E1A001F5C7C /* Lesson.swift */; };
+		8F0B327F29C91408001F5C7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B327E29C91408001F5C7C /* GoogleService-Info.plist */; };
+		8F0B328229C9147F001F5C7C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0B328129C9147F001F5C7C /* FirebaseAuth */; };
+		8F0B328429C9147F001F5C7C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0B328329C9147F001F5C7C /* FirebaseFirestore */; };
+		8F0B328629C9147F001F5C7C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0B328529C9147F001F5C7C /* FirebaseFirestoreSwift */; };
+		8F0B328829C9147F001F5C7C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8F0B328729C9147F001F5C7C /* FirebaseStorage */; };
+		8F0B328A29C918B7001F5C7C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B328929C918B7001F5C7C /* User.swift */; };
+		8F0B328C29C928E6001F5C7C /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B328B29C928E6001F5C7C /* SessionStore.swift */; };
+		8F0B328E29C92932001F5C7C /* FirebaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B328D29C92932001F5C7C /* FirebaseUser.swift */; };
 		8F131FF429BFEBFA00C3906F /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F131FF329BFEBFA00C3906F /* CoreServices.framework */; };
 		8F131FF629BFEC7D00C3906F /* CourseCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F131FF529BFEC7D00C3906F /* CourseCategoryView.swift */; };
 		8F131FF829C2447E00C3906F /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F131FF729C2447E00C3906F /* CategoryRow.swift */; };
 		8F131FFA29C2479300C3906F /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F131FF929C2479300C3906F /* CourseRow.swift */; };
+		8F5A089D29C9374100B0AE24 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A089C29C9374100B0AE24 /* Unit.swift */; };
 		8F9E10B829BDFDFA004237B9 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10B729BDFDFA004237B9 /* CategoryItem.swift */; };
 		8F9E10BA29BE01BF004237B9 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10B929BE01BF004237B9 /* TabBarView.swift */; };
 		8F9E10BD29BF950A004237B9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10BC29BF950A004237B9 /* Category.swift */; };
@@ -19,6 +32,7 @@
 		8F9E10C329BFC5D1004237B9 /* TrackSelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */; };
 		8F9E10C529BFC6FB004237B9 /* LearningTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */; };
 		8F9E10C729BFD7A9004237B9 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9E10C629BFD7A9004237B9 /* CategoriesView.swift */; };
+		8FA7CB6329C8DC8600E17DD2 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA7CB6229C8DC8600E17DD2 /* CourseView.swift */; };
 		8FC5EC2029B5083A002A5C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5EC1F29B5083A002A5C75 /* HomeView.swift */; };
 		8FD3602429B26B96008E4C1C /* Mystic_AcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3602329B26B96008E4C1C /* Mystic_AcademyApp.swift */; };
 		8FD3602629B26B96008E4C1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD3602529B26B96008E4C1C /* ContentView.swift */; };
@@ -30,11 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0B327629C8F3E0001F5C7C /* LessonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonRow.swift; sourceTree = "<group>"; };
+		8F0B327829C8FCA5001F5C7C /* CourseUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseUnit.swift; sourceTree = "<group>"; };
+		8F0B327A29C90451001F5C7C /* ReviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewItem.swift; sourceTree = "<group>"; };
+		8F0B327C29C90E1A001F5C7C /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		8F0B327E29C91408001F5C7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F0B328929C918B7001F5C7C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8F0B328B29C928E6001F5C7C /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		8F0B328D29C92932001F5C7C /* FirebaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUser.swift; sourceTree = "<group>"; };
 		8F131FF329BFEBFA00C3906F /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		8F131FF529BFEC7D00C3906F /* CourseCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCategoryView.swift; sourceTree = "<group>"; };
 		8F131FF729C2447E00C3906F /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		8F131FF929C2479300C3906F /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
 		8F131FFB29C24ABE00C3906F /* Mystic-Academy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mystic-Academy-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8F5A089C29C9374100B0AE24 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		8F9E10B729BDFDFA004237B9 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		8F9E10B929BE01BF004237B9 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		8F9E10BC29BF950A004237B9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -43,6 +66,7 @@
 		8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSelectionSheet.swift; sourceTree = "<group>"; };
 		8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTrack.swift; sourceTree = "<group>"; };
 		8F9E10C629BFD7A9004237B9 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		8FA7CB6229C8DC8600E17DD2 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		8FC5EC1F29B5083A002A5C75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8FD3602029B26B96008E4C1C /* Mystic Academy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mystic Academy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD3602329B26B96008E4C1C /* Mystic_AcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mystic_AcademyApp.swift; sourceTree = "<group>"; };
@@ -60,12 +84,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F131FF429BFEBFA00C3906F /* CoreServices.framework in Frameworks */,
+				8F0B328229C9147F001F5C7C /* FirebaseAuth in Frameworks */,
+				8F0B328429C9147F001F5C7C /* FirebaseFirestore in Frameworks */,
+				8F0B328829C9147F001F5C7C /* FirebaseStorage in Frameworks */,
+				8F0B328629C9147F001F5C7C /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F0B327529C8F3DA001F5C7C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				8F0B327629C8F3E0001F5C7C /* LessonRow.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		8F131FF229BFEBFA00C3906F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,9 +124,33 @@
 		8F9E10BB29BF94F9004237B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8FA7CB6129C8DC7000E17DD2 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				8F0B327529C8F3DA001F5C7C /* Items */,
+				8F131FF529BFEC7D00C3906F /* CourseCategoryView.swift */,
+				8FA7CB6229C8DC8600E17DD2 /* CourseView.swift */,
+				8F0B327829C8FCA5001F5C7C /* CourseUnit.swift */,
+				8F0B327A29C90451001F5C7C /* ReviewItem.swift */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		8FA7CB6429C8DF3E00E17DD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				8F9E10BC29BF950A004237B9 /* Category.swift */,
 				8F9E10C029BF9B89004237B9 /* Course.swift */,
-				8F9E10C429BFC6FB004237B9 /* LearningTrack.swift */,
+				8F0B327C29C90E1A001F5C7C /* Lesson.swift */,
+				8F0B328929C918B7001F5C7C /* User.swift */,
+				8F0B328D29C92932001F5C7C /* FirebaseUser.swift */,
+				8F0B328B29C928E6001F5C7C /* SessionStore.swift */,
+				8F5A089C29C9374100B0AE24 /* Unit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,7 +170,6 @@
 				8FC5EC1F29B5083A002A5C75 /* HomeView.swift */,
 				8F9E10C229BFC5D1004237B9 /* TrackSelectionSheet.swift */,
 				8F9E10C629BFD7A9004237B9 /* CategoriesView.swift */,
-				8F131FF529BFEC7D00C3906F /* CourseCategoryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -135,9 +194,11 @@
 		8FD3602229B26B96008E4C1C /* Mystic Academy */ = {
 			isa = PBXGroup;
 			children = (
+				8F0B327E29C91408001F5C7C /* GoogleService-Info.plist */,
 				8F131FFB29C24ABE00C3906F /* Mystic-Academy-Info.plist */,
 				8FD3602329B26B96008E4C1C /* Mystic_AcademyApp.swift */,
 				8FD3603929B2761C008E4C1C /* Items */,
+				8FA7CB6429C8DF3E00E17DD2 /* Models */,
 				8FD3603329B272CB008E4C1C /* Views */,
 				8FD3602729B26B97008E4C1C /* Assets.xcassets */,
 				8FD3602929B26B97008E4C1C /* Preview Content */,
@@ -156,6 +217,7 @@
 		8FD3603329B272CB008E4C1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8FA7CB6129C8DC7000E17DD2 /* Course */,
 				8FC5EC1E29B50828002A5C75 /* Home */,
 				8FC5EC1D29B5074D002A5C75 /* Authentication */,
 				8FD3603429B272D7008E4C1C /* Navigation */,
@@ -214,6 +276,12 @@
 			dependencies = (
 			);
 			name = "Mystic Academy";
+			packageProductDependencies = (
+				8F0B328129C9147F001F5C7C /* FirebaseAuth */,
+				8F0B328329C9147F001F5C7C /* FirebaseFirestore */,
+				8F0B328529C9147F001F5C7C /* FirebaseFirestoreSwift */,
+				8F0B328729C9147F001F5C7C /* FirebaseStorage */,
+			);
 			productName = "Mystic Acadamy";
 			productReference = 8FD3602029B26B96008E4C1C /* Mystic Academy.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +310,9 @@
 				Base,
 			);
 			mainGroup = 8FD3601729B26B96008E4C1C;
+			packageReferences = (
+				8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8FD3602129B26B96008E4C1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +329,7 @@
 			files = (
 				8FD3602B29B26B97008E4C1C /* Preview Assets.xcassets in Resources */,
 				8FD3602829B26B97008E4C1C /* Assets.xcassets in Resources */,
+				8F0B327F29C91408001F5C7C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,12 +351,21 @@
 				8F9E10BA29BE01BF004237B9 /* TabBarView.swift in Sources */,
 				8FD3603229B272C6008E4C1C /* OnboardingView.swift in Sources */,
 				8F9E10B829BDFDFA004237B9 /* CategoryItem.swift in Sources */,
+				8F0B327729C8F3E0001F5C7C /* LessonRow.swift in Sources */,
+				8FA7CB6329C8DC8600E17DD2 /* CourseView.swift in Sources */,
+				8F5A089D29C9374100B0AE24 /* Unit.swift in Sources */,
 				8F9E10C729BFD7A9004237B9 /* CategoriesView.swift in Sources */,
+				8F0B328C29C928E6001F5C7C /* SessionStore.swift in Sources */,
 				8F9E10BD29BF950A004237B9 /* Category.swift in Sources */,
+				8F0B327B29C90451001F5C7C /* ReviewItem.swift in Sources */,
 				8FC5EC2029B5083A002A5C75 /* HomeView.swift in Sources */,
+				8F0B327929C8FCA5001F5C7C /* CourseUnit.swift in Sources */,
 				8FD3602629B26B96008E4C1C /* ContentView.swift in Sources */,
+				8F0B328E29C92932001F5C7C /* FirebaseUser.swift in Sources */,
 				8FD3602429B26B96008E4C1C /* Mystic_AcademyApp.swift in Sources */,
 				8F9E10C529BFC6FB004237B9 /* LearningTrack.swift in Sources */,
+				8F0B327D29C90E1A001F5C7C /* Lesson.swift in Sources */,
+				8F0B328A29C918B7001F5C7C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +498,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mystic-Academy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mystic Academy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -446,6 +528,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Mystic-Academy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mystic Academy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -485,6 +568,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F0B328129C9147F001F5C7C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		8F0B328329C9147F001F5C7C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		8F0B328529C9147F001F5C7C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		8F0B328729C9147F001F5C7C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F0B328029C9147F001F5C7C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FD3601829B26B96008E4C1C /* Project object */;
 }

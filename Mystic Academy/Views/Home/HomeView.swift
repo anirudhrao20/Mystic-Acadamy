@@ -6,8 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct HomeView: View {
+    
+    @EnvironmentObject var loginManager: SessionStore
+    
+    @FirestoreQuery(collectionPath: "Courses") var courses: [Course]
+    @FirestoreQuery(collectionPath: "Categories") var categories: [Category]
     
     @State var hasNotification = false
     @State var selectedlearningTrack = ""
@@ -51,8 +57,15 @@ struct HomeView: View {
     
     var header: some View {
         HStack(spacing: 8.0) {
-            Circle()
-                .frame(width: 48, height: 48)
+            AsyncImage(url: URL(string: "https://firebasestorage.googleapis.com/v0/b/mystic-academy-20355.appspot.com/o/defaultprofilepicture.jpg?alt=media&token=36564139-10fd-444f-9dc2-8e75772e550e")) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 48.0, height: 48.0)
+                    .clipShape(Circle())
+            } placeholder: {
+                ProgressView()
+            }
             VStack(alignment: .leading) {
                 Text("Welcome Back!")
                     .font(.callout)
@@ -118,7 +131,7 @@ struct HomeView: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12.0) {
-                    ForEach(testCategories) { category in
+                    ForEach(categories) { category in
                         CategoryItem(category: category)
                     }
                 }
@@ -142,8 +155,11 @@ struct HomeView: View {
             }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12.0) {
-                    ForEach(testCourses.prefix(5)) { course in
-                        CourseItem(course: course)
+                    ForEach(courses.prefix(5)) { course in
+                        NavigationLink(destination: CourseView(course: course)) {
+                            CourseItem(course: course)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }
@@ -231,5 +247,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(SessionStore())
     }
 }

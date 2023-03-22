@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
 struct CategoriesView: View {
     
     @Environment(\.dismiss) private var dismiss
+    @FirestoreQuery(collectionPath: "Categories") var categories: [Category]
     
     var body: some View {
         ZStack {
@@ -17,7 +19,7 @@ struct CategoriesView: View {
                 .ignoresSafeArea()
             ScrollView {
                 VStack(spacing: 24.0) {
-                    ForEach(testCategories) { category in
+                    ForEach(categories) { category in
                         NavigationLink {
                             CourseCategoryView(category: category)
                         } label: {
